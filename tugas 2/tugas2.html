@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Biodata</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        .header {
+            background-color: #007bff;
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+        .menu {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            padding-right: 20px;
+        }
+        .profile-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .profile-section img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .profile-text {
+            max-width: 50%;
+            text-align: left;
+            padding-right: 20px;
+        }
+        .about-section {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        .about-section h3 {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .about-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .about-box {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .about-box b {
+            color: #007bff;
+        }
+        .portfolio-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .portfolio-section h3 {
+            color: #007bff;
+            font-weight: bold;
+        }
+        .portfolio-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .portfolio-item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 30%;
+        }
+        .portfolio-item img {
+            width: 100%;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header d-flex justify-content-between align-items-center">
+        <h3 class="ms-3">Brand</h3>
+        <div class="menu">
+            <a href="#" class="text-white text-decoration-none">Header</a>
+            <a href="#" class="text-white text-decoration-none">Biodata</a>
+            <a href="#" class="text-white text-decoration-none">Portofolio</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="profile-section">
+            <div class="profile-text">
+                <h2><b>Selamat Datang di Website Saya</b></h2>
+                <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+                <button class="btn btn-primary">Pelajari Lebih Lanjut</button>
+            </div>
+            <img src="https://cdn-brilio-net.akamaized.net/webp/news/2022/02/22/223597/1675118-memotret-foto-profil-profesional.jpg" alt="Foto Profil">
+        </div>
+    </div>
+    <div class="about-section">
+        <h3>About Me</h3>
+        <p>A brief introduction about myself</p>
+        <div class="about-info">
+            <div class="about-box"><b>Full Name:</b> Dodi</div>
+            <div class="about-box"><b>Education:</b> S1 Informatika</div>
+            <div class="about-box"><b>Pekerjaan:</b> Programmer</div>
+            <div class="about-box"><b>Contact:</b> dodi@example.com</div>
+            <div class="about-box"><b>Hobi:</b> Membaca, Coding</div>
+            <div class="about-box"><b>Alamat:</b> Jakarta</div>
+        </div>
+    </div>
+    <div class="portfolio-section">
+        <h3>Portofolio</h3>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Proyek 1">
+                <h5>Proyek 1</h5>
+                <p>Deskripsi proyek 1.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Proyek 2">
+                <h5>Proyek 2</h5>
+                <p>Deskripsi proyek 2.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project3.jpg" alt="Proyek 3">
+                <h5>Proyek 3</h5>
+                <p>Deskripsi proyek 3.</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-primary text-white text-center py-3">
+        &copy; 2024 Dodi. All rights reserved.
+    </footer>
+</body>
+</html>
+
