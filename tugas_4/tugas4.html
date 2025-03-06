@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profile Viona</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .section {
+            padding: 96px 0;
+        }
+        .font-yellow{
+            color: #EAB308;
+        }
+        .font-white{
+            color: #fff;
+        }
+        .font-grey{
+            color: #6B7280;
+        }
+        .h1{font-size: 42px; font-weight: bold;}
+        .profile-img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .about-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .about-box {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .about-box b {
+            color: #007bff;
+        }
+        .bg-grey{
+            background-color: #111827;
+        }
+        .bg-drak {
+            background-color: #020617;
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <!-- Section 1: Menu -->
+    <nav class="navbar navbar-expand-lg navbar bg-drak border-bottom border-body">
+        <div class="container">
+            <a class="navbar-brand" style="color: #fff; font-weight: bold;" href="#">Viona Portofolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" style="color: #fff;" href="#about">Biodata</a></li>
+                    <li class="nav-item"><a class="nav-link" style="color: #fff;" href="#portfolio">Portofolio</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Section 2: Header dan Profil -->
+    <header class="section text-center bg-grey">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6" style= "color: #fff;">
+                    <h2>Selamat Datang di Website Saya</h2>
+                    <p>Ini adalah contoh header dengan dua kolom. Kolom kiri berisi teks seperti ini.</p>
+                    <button class="btn btn-warning margin-bottom-32px">Pelajari Lebih Lanjut</button>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://shanibacreative.com/wp-content/uploads/2021/12/Profile-Shoot-1-scaled.jpg" alt="Profile Picture" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section 3: About Me -->
+    <section id="about" class="section text-center bg-drak" >
+        <div class="container">
+            <h2 class="text-warning">About Me</h2>
+            <p style="color: #fff; margin-bottom: 32px;">A brief introduction about myself</p>
+            <div class="row g-3" style="color: #fff;">
+                <div class="col-md-4"><div class="p-3 border card-hover"> <strong>Full Name:</strong> Viona Febrinisa </div></div>
+                <div class="col-md-4"><div class="p-3 border card-hover"> <strong>Education:</strong> S1  </div></div>
+                <div class="col-md-4"><div class="p-3 border card-hover"> <strong>Pekerjaan:</strong> Programmer </div></div>
+                <div class="col-md-4"><div class="p-3 border card-hover"> <strong>Contact:</strong> vfnisa.vf@gmail.com </div></div>
+                <div class="col-md-4"><div class="p-3 border card-hover"> <strong>Hobi:</strong> Membaca, Coding </div></div>
+                <div class="col-md-4"><div class="p-3 border card-hover"> <strong>Alamat:</strong> Padang </div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Portofolio -->
+    <section class="bg-grey">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center d-flex align-items-center justify-content-center">
+              <div style="max-width: 460px;">
+                <h1 class="font-white" style="margin-top: 32px; margin-bottom: 32px;">My <span class="font-yellow">Service</span></h1>
+                <p class="font-grey" style="margin-bottom: 24px;">There are many variations of passages ofLorem Ipsum
+                  available, but the majority havesuffered alteration in some 
+                  form, by injected humour,
+                </p>
+              </div>
+            </div>
+            <div class="col-12">
+              <div id="carouselExample" class="carousel slide">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="gambar/image 1.png" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gambar/image 2.png" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gambar/image 3.png" class="d-block w-100 rounded" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="gambar/image 4.png" class="d-block w-100 rounded" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- Footer -->
+    <footer class="text-center bg-drak text-white p-3">
+        <p>&copy; 2024 Viona. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
